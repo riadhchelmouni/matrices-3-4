@@ -1,0 +1,42 @@
+#include<stdio.h>
+#include<math.h>
+
+int main()
+
+{
+
+int a[3][4],b[3][4],i,j,sum;
+
+float avg;
+
+sum=0;
+
+printf(" Enter the No. of matrix\n");
+
+for(i=0;i<=2;i++)
+
+for(j=0;j<=3;j++)
+
+scanf("%d",&a[i][j]);
+
+printf("*********************************\n");
+
+for(i=0;i<=2;i++)
+
+for(j=0;j<=3;j++)
+
+scanf("%d",&b[i][j]);
+
+printf("*********************************\n");
+
+for(i=0;i<=2;i++)
+
+sum=sum+(a[i][2]+b[i][2]);
+
+avg=sum/6;
+
+printf("The average of 3rd column of two matrices =[%f]\n",avg);
+
+return 0;
+
+}
